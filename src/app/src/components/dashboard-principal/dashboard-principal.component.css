@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .container-recetas {
+    padding: 12px;
+    box-sizing: border-box;
+    background-clip:content-box;
+  }
+
+  
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.title-reciper {
+    font-size: 4rem;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 2rem auto;
+    text-align: center;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: lightgray;
+}
+
+.container-footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .container-recetas {
+      padding: auto;
+      box-sizing: border-box;
+      background-clip: content-box;
+    }
+    .title-reciper {
+      font-size: 2rem;
+      margin: 1rem auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .container-recetas {
+      width: 50%;
+      padding: auto;
+      box-sizing: border-box;
+      background-clip: content-box;
+    }
+    .title-reciper {
+      font-size: 3rem;
+      margin: 1rem auto;
+  }
+}
+
+@media (min-width: 1024px){
+  .container-recetas {
+      width: 30%;
+      padding: auto;
+      box-sizing: border-box;
+      background-clip: content-box;
+    }
+}
+

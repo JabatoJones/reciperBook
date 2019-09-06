@@ -1,0 +1,26 @@
+<div class="main">
+    <div class="title-reciper">{{titleReciper}}</div>
+    <div class="form-group has-search">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control" (keyup)="onKey($event)" placeholder="Find your favorite reciper..."
+            name="buscador" id="buscador" />
+    </div>
+    <!-- NgFor Recetas  -->
+    <div class="container">
+        <div *ngFor="let reciper of recipers" class="container-recetas">
+            <app-receta-component [reciper]="reciper"></app-receta-component>
+        </div>
+    </div>
+
+    <!-- ERROR NBA -->
+    <div class="alert alert-warning" role="alert" *ngIf="error">
+        {{errorDesc}}
+    </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+    <div class="container-footer">
+        {{copy}}
+        <a href="https://github.com/JabatoJones"> {{developerBy }}</a>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="card mb-3 receta-container">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src={{reciper.thumbnail}} class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{reciper.title}}</h5>
+                <div class="card-text"> <p style="font-style: italic; font-weight: 400;color: seagreen;">{{ ingredients }}</p>  <p style="font-style: italic;color: darkgray">{{reciper.ingredients}}</p></div>                
+            </div>
+            <p class="card-text">{{lookAt}}<input  type="button" class="btn btn-primary" value="¡¡HERE!!" (click) = "openWindow(reciper)"/></p>
+        </div>
+    </div>
+</div>
